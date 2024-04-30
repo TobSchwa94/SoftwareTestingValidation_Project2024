@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class Question {
 public Question(String body, List<String> choices, int correctChoice, String topic, int weight) throws
 InvalidOperationException { /* .... */ }
@@ -9,18 +11,22 @@ public void remove(String topic) throws InvalidOperationException { /* .... */ }
 public void add(String topic) throws InvalidOperationException { /* .... */ }
 
 // Returns all topics of this question
-public List<String> getTopics() { /* .... */ }
+public List<String> getTopics() {
+	return null; /* .... */ }
 
 // Computes the grade considering the weight of this question and the selected choice
-public float grade(int selectedChoice) { /* .... */ }
+public float grade(int selectedChoice) {
+	return selectedChoice; /* .... */ }
 
 // Changes the weight of this question
 public void setWeight(int weight) throws InvalidOperationException { /* .... */ }
 
 // Returns the weight of this question
-public int getWeight() { /* .... */ }
+public int getWeight() {
+	return 0; /* .... */ }
 
 // Returns the choices of this question
-public List<String> getChoices() { /* .... */ }
+public List<String> getChoices() {
+	return null; /* .... */ }
 
 }

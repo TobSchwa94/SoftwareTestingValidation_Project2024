@@ -1,10 +1,11 @@
-public enum ManagerMode { OPEN, PUBLISHED, TERMINATED, EVALUATION; }
-
 public class ExamManager {
+
+	public enum ManagerMode { OPEN, PUBLISHED, TERMINATED, EVALUATION; }
 public ExamManager(ExamModel model) { /* ... */ }
 
 // Returns the mode of this exam manager
-public final ManagerMode getMode() { /* ... */ }
+public final ManagerMode getMode() {
+	return null; /* ... */ }
 
 // Enrolls a student for this exam
 public void enroll(Student t) { /* ... */ }
@@ -13,7 +14,8 @@ public void enroll(Student t) { /* ... */ }
 public void cancel() { /* ... */ }
 
 // Returns an exam for the (enrolled) student
-public Exam getExam(Student student) { /* ... */ }
+public Exam getExam(Student student) {
+	return null; /* ... */ }
 
 // Submits an exam
 public void submit(Exam exam) { /* ... */ }
@@ -22,6 +24,7 @@ public void submit(Exam exam) { /* ... */ }
 public void close() { /* ... */ }
 
 // Returns the evaluation of the exam made by the specified student
-public float evaluate(Student student) { /* ... */ }
+public float evaluate(Student student) {
+	return 0; /* ... */ }
 
 }
